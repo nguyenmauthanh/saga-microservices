@@ -1,0 +1,12 @@
+com\example\saga\inventory\InventoryServiceApplication.class
+com\example\saga\inventory\domain\InventoryItem.class
+com\example\saga\inventory\domain\InventoryReservationRepository.class
+com\example\saga\inventory\config\KafkaTopics.class
+com\example\saga\inventory\domain\InventoryItemRepository.class
+com\example\saga\inventory\domain\InventoryReservation.class
+com\example\saga\inventory\domain\IdempotencyStore.class
+com\example\saga\inventory\domain\IdempotencyRecord.class
+com\example\saga\inventory\domain\InventoryController.class
+com\example\saga\inventory\domain\ReservationStatus.class
+com\example\saga\inventory\domain\InventoryCommandListener.class
+com\example\saga\inventory\service\InventoryService.class

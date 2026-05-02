@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(tail:*)",
+      "Bash(grep:*)",
+      "Bash(cd C:\\\\Users\\\\Bong\\\\OneDrive\\\\Desktop\\\\CODE\\\\Java\\\\saga-microservices:*)",
+      "Bash(cd C:\\\\Users\\\\Bong\\\\OneDrive\\\\Desktop\\\\CODE\\\\Java\\\\saga-microservices\\\\common\\\\src\\\\main\\\\java\\\\com\\\\example\\\\saga\\\\common:*)",
+      "Bash(python3:*)"
+    ]
+  }
+}

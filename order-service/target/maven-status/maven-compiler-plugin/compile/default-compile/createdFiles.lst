@@ -1,0 +1,17 @@
+com\example\saga\order\saga\OrderSagaOrchestrator.class
+com\example\saga\order\saga\SagaInstanceRepository.class
+com\example\saga\order\controller\OrderController$CreateOrderRequest.class
+com\example\saga\order\domain\Order.class
+com\example\saga\order\saga\IdempotencyRepository.class
+com\example\saga\order\service\OrderService.class
+com\example\saga\order\domain\OrderRepository.class
+com\example\saga\order\saga\IdempotencyRecord.class
+com\example\saga\order\saga\SagaInstance.class
+com\example\saga\order\service\OrderService$OrderItemRequest.class
+com\example\saga\order\saga\IdempotencyJpaRepository.class
+com\example\saga\order\config\KafkaTopics.class
+com\example\saga\order\domain\OrderStatus.class
+com\example\saga\order\controller\OrderController.class
+com\example\saga\order\OrderServiceApplication.class
+com\example\saga\order\domain\OrderItem.class
+com\example\saga\order\saga\SagaState.class

@@ -1,0 +1,10 @@
+C:\Users\Bong\OneDrive\Desktop\CODE\Java\saga-microservices\inventory-service\src\main\java\com\example\saga\inventory\config\KafkaTopics.java
+C:\Users\Bong\OneDrive\Desktop\CODE\Java\saga-microservices\inventory-service\src\main\java\com\example\saga\inventory\domain\InventoryCommandListener.java
+C:\Users\Bong\OneDrive\Desktop\CODE\Java\saga-microservices\inventory-service\src\main\java\com\example\saga\inventory\domain\InventoryController.java
+C:\Users\Bong\OneDrive\Desktop\CODE\Java\saga-microservices\inventory-service\src\main\java\com\example\saga\inventory\domain\InventoryItem.java
+C:\Users\Bong\OneDrive\Desktop\CODE\Java\saga-microservices\inventory-service\src\main\java\com\example\saga\inventory\domain\InventoryItemRepository.java
+C:\Users\Bong\OneDrive\Desktop\CODE\Java\saga-microservices\inventory-service\src\main\java\com\example\saga\inventory\domain\InventoryReservation.java
+C:\Users\Bong\OneDrive\Desktop\CODE\Java\saga-microservices\inventory-service\src\main\java\com\example\saga\inventory\domain\InventoryReservationRepository.java
+C:\Users\Bong\OneDrive\Desktop\CODE\Java\saga-microservices\inventory-service\src\main\java\com\example\saga\inventory\domain\ReservationStatus.java
+C:\Users\Bong\OneDrive\Desktop\CODE\Java\saga-microservices\inventory-service\src\main\java\com\example\saga\inventory\InventoryServiceApplication.java
+C:\Users\Bong\OneDrive\Desktop\CODE\Java\saga-microservices\inventory-service\src\main\java\com\example\saga\inventory\service\InventoryService.java

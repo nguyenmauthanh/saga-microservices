@@ -6,6 +6,10 @@ on:
   pull_request:
     branches: [main]
 
+permissions:
+  contents: read
+  packages: write   # needed to push images to GHCR
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -23,3 +27,45 @@ jobs:
 
       - name: Build and test all modules
         run: mvn verify
+
+      # ── Docker steps run only on push to main, not on PRs ──────────────────
+
+      - name: Log in to GitHub Container Registry
+        if: github.event_name == 'push'
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build and push order-service
+        if: github.event_name == 'push'
+        uses: docker/build-push-action@v5
+        with:
+          context: ./order-service
+          push: true
+          tags: ghcr.io/${{ github.repository }}/order-service:latest
+
+      - name: Build and push inventory-service
+        if: github.event_name == 'push'
+        uses: docker/build-push-action@v5
+        with:
+          context: ./inventory-service
+          push: true
+          tags: ghcr.io/${{ github.repository }}/inventory-service:latest
+
+      - name: Build and push fraud-check-service
+        if: github.event_name == 'push'
+        uses: docker/build-push-action@v5
+        with:
+          context: ./fraud-check-service
+          push: true
+          tags: ghcr.io/${{ github.repository }}/fraud-check-service:latest
+
+      - name: Build and push payment-service
+        if: github.event_name == 'push'
+        uses: docker/build-push-action@v5
+        with:
+          context: ./payment-service
+          push: true
+          tags: ghcr.io/${{ github.repository }}/payment-service:latest
